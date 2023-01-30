@@ -1,4 +1,4 @@
-package com.knoldus.service;
+package com.knoldus.spring.service;
 
 import org.springframework.stereotype.Service;
 

@@ -1,4 +1,4 @@
-package com.knoldus;
+package com.knoldus.spring;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

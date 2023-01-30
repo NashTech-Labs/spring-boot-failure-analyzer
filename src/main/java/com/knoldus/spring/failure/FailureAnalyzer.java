@@ -1,10 +1,11 @@
-package com.knoldus;
+package com.knoldus.spring.failure;
 
 import org.springframework.beans.factory.BeanNotOfRequiredTypeException;
 import org.springframework.boot.diagnostics.AbstractFailureAnalyzer;
 import org.springframework.boot.diagnostics.FailureAnalysis;
 
 public class FailureAnalyzer extends AbstractFailureAnalyzer<BeanNotOfRequiredTypeException> {
+
 	@Override
 	protected FailureAnalysis analyze(Throwable rootFailure, BeanNotOfRequiredTypeException cause) {
 		return new FailureAnalysis(getDescription(cause), getAction(cause), cause);
